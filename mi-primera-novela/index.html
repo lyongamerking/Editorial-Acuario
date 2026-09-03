@@ -21,113 +21,120 @@
         }
         .back-home {
             display: inline-block;
-            margin-bottom: 1.5rem;
             color: #38bdf8;
             text-decoration: none;
+            margin-bottom: 2rem;
             font-weight: 500;
+            transition: color 0.2s;
         }
         .back-home:hover {
+            color: #7dd3fc;
             text-decoration: underline;
         }
         .novel-header {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
             background-color: #1e293b;
-            padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-        @media(min-width: 640px) {
-            .novel-header {
-                flex-direction: row;
-            }
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2.5rem;
         }
         .novel-cover {
-            width: 100%;
-            max-width: 220px;
-            height: 310px;
+            width: 220px;
+            height: 320px;
             background-color: #334155;
             border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #94a3b8;
-            text-align: center;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-            overflow: hidden;
-            border: 1px solid #475569;
         }
         .novel-cover img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .novel-info h1 {
-            color: #60a5fa;
-            font-size: 1.8rem;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+        .novel-info {
+            flex: 1;
+            min-width: 250px;
         }
-        .novel-meta {
-            font-size: 0.95rem;
-            color: #94a3b8;
+        h1 {
+            color: #60a5fa;
+            font-size: 2rem;
+            margin-top: 0;
             margin-bottom: 1rem;
+        }
+        .metadata {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
-        .novel-meta span {
-            background-color: #0f172a;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            border: 1px solid #334155;
-        }
-        .novel-synopsis {
+        .tag {
+            background-color: #334155;
             color: #cbd5e1;
-            font-size: 1rem;
-            line-height: 1.6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
         }
-        .chapters-section h2 {
+        .tag.status {
+            background-color: #0369a1;
+            color: #e0f2fe;
+        }
+        .synopsis {
+            color: #94a3b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        h2 {
             color: #f8fafc;
-            border-bottom: 2px solid #334155;
+            border-bottom: 2px solid #1e293b;
             padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
         }
         .chapter-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 1rem;
         }
-        .chapter-item a {
+        .chapter-card {
+            background-color: #1e293b;
+            padding: 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1e293b;
-            color: #f8fafc;
-            padding: 1rem 1.25rem;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.2s, transform 0.2s;
-            border: 1px solid #334155;
+            transition: transform 0.2s, background-color 0.2s;
+            border-left: 4px solid #38bdf8;
         }
-        .chapter-item a:hover {
+        .chapter-card:hover {
             background-color: #334155;
             transform: translateX(4px);
-            border-color: #38bdf8;
         }
         .chapter-title {
-            font-weight: 500;
+            font-weight: 600;
+            color: #f8fafc;
+            margin-bottom: 0.25rem;
         }
-        .chapter-date {
+        .chapter-info {
             font-size: 0.85rem;
             color: #94a3b8;
+        }
+        .chapter-badge {
+            background-color: #065f46;
+            color: #d1fae5;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -137,37 +144,31 @@
         <a href="../index.html" class="back-home">← Volver al Inicio de Editorial Acuario</a>
 
         <div class="novel-header">
-            <!-- Espacio reservado para la portada -->
             <div class="novel-cover">
-                <span>[Portada de la Novela]</span>
-                <!-- Cuando tengas la imagen, puedes descomentar la siguiente línea y borrar el span de arriba: -->
-                <!-- <img src="portada.jpg" alt="Portada Kage no Jitsuryokusha"> -->
+                <img src="portada.jpg" alt="Portada Kage no Jitsuryokusha">
             </div>
-
             <div class="novel-info">
                 <h1>Kage no Jitsuryokusha ni Naritakute!</h1>
-                <div class="novel-meta">
-                    <span>Género: Isekai, Comedia, Acción</span>
-                    <span>Autor: Daisuke Aizawa</span>
-                    <span>Estado: En traducción</span>
+                <div class="metadata">
+                    <span class="tag">Género: Isekai, Comedia, Acción</span>
+                    <span class="tag">Autor: Daisuke Aizawa</span>
+                    <span class="tag status">Estado: En traducción</span>
                 </div>
-                <div class="novel-synopsis">
-                    <p>Así como los héroes y los villanos siempre han existido, alguien tiene que operar desde las sombras manipulando los hilos de la historia. Cid Kagenou aspira a convertirse en esa eminencia absoluta... Pero tras un trágico accidente en su vida anterior, reencarna en un mundo de fantasía donde la magia es real, dándole la oportunidad perfecta para llevar sus delirios al siguiente nivel sin saber que sus fantasías de mentira están a punto de volverse una aterradora realidad.</p>
-                </div>
+                <p class="synopsis">
+                    Así como los héroes y los villanos siempre han existido, alguien tiene que operar desde las sombras manipulando los hilos de la historia. Cid Kagenou aspira a convertirse en esa eminencia absoluta... Pero tras un trágico accidente en su vida anterior, reencarna en un mundo de fantasía donde la magia es real, dándole la oportunidad perfecta para llevar sus delirios al siguiente nivel sin saber que sus fantasías de mentira están a punto de volverse una aterradora realidad.
+                </p>
             </div>
         </div>
 
-        <div class="chapters-section">
-            <h2>Lista de Capítulos</h2>
-            <ul class="chapter-list">
-                <li class="chapter-item">
-                    <a href="capitulo-1.html">
-                        <span class="chapter-title">Capítulo 1: ¡Permanecer dentro de los límites del ser humano significa que serás vaporizado por una bomba nuclear!</span>
-                        <span class="chapter-date">Estreno</span>
-                    </a>
-                </li>
-                <!-- Aquí iremos agregando los siguientes capítulos -->
-            </ul>
+        <h2>Lista de Capítulos</h2>
+        <div class="chapter-list">
+            <a href="capitulo-1.html" class="chapter-card">
+                <div>
+                    <div class="chapter-title">Capítulo 1: ¡Permanecer dentro de los límites del ser humano significa que serás vaporizado por una súper arma!</div>
+                    <div class="chapter-info">Traducción oficial de fan | Editorial Acuario</div>
+                </div>
+                <span class="chapter-badge">Estreno</span>
+            </a>
         </div>
     </div>
 
