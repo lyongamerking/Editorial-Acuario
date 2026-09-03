@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Acuario | Novelas Web y Fantasía</title>
+    <title>Editorial Acuario | Novelas Ligeras</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,71 +13,49 @@
             padding: 0;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             min-height: 100vh;
-        }
-        header {
-            background-color: #1e293b;
-            padding: 2rem;
             text-align: center;
-            border-bottom: 2px solid #3b82f6;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
         }
         h1 {
-            margin: 0;
-            font-size: 2.5rem;
             color: #60a5fa;
-        }
-        main {
-            flex: 1;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
         p {
-            font-size: 1.1rem;
             color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
             line-height: 1.6;
         }
-        .cta-button {
+        .btn {
             display: inline-block;
-            margin-top: 1.5rem;
+            background-color: #38bdf8;
+            color: #0f172a;
             padding: 0.75rem 1.5rem;
-            background-color: #3b82f6;
-            color: white;
-            text-decoration: none;
             border-radius: 8px;
+            text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
-        .cta-button:hover {
-            background-color: #2563eb;
-        }
-        footer {
-            background-color: #1e293b;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #64748b;
-            border-top: 1px solid #334155;
+        .btn:hover {
+            background-color: #7dd3fc;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="container">
         <h1>Editorial Acuario</h1>
-        <p>Tu nuevo sello digital de novelas web, isekai y fantasía</p>
-    </header>
-
-    <main>
-        <h2>Próximamente</h2>
-        <p>Estamos preparando mundos increíbles, sistemas de magia únicos y protagonistas listos para la aventura. Muy pronto podrás leer nuestros primeros lanzamientos completamente gratis.</p>
-        <a href="#" class="cta-button">Explorar Catálogo</a>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Editorial Acuario. Todos los derechos reservados.</p>
-    </footer>
+        <p>Tu portal especializado en la traducción y difusión de novelas ligeras y web novels de fantasía e isekai al español. Sumérgete en historias épicas directamente desde las sombras.</p>
+        <a href="mi-primera-novela/index.html" class="btn">Explorar Catálogo</a>
+    </div>
 
 </body>
 </html>
