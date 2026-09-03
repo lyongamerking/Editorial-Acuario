@@ -19,84 +19,63 @@
             max-width: 800px;
             width: 100%;
         }
-        .back-home {
-            display: inline-block;
+        .back-link {
             color: #38bdf8;
             text-decoration: none;
-            margin-bottom: 2rem;
             font-weight: 500;
+            display: inline-block;
+            margin-bottom: 2rem;
             transition: color 0.2s;
         }
-        .back-home:hover {
+        .back-link:hover {
             color: #7dd3fc;
             text-decoration: underline;
         }
         .novel-header {
-            background-color: #1e293b;
-            border-radius: 12px;
-            padding: 2rem;
             display: flex;
-            flex-wrap: wrap;
             gap: 2rem;
-            align-items: flex-start;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            background-color: #1e293b;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             margin-bottom: 2.5rem;
+            align-items: center;
+            border: 1px solid #334155;
         }
         .novel-cover {
-            width: 220px;
-            height: 320px;
-            background-color: #334155;
+            width: 180px;
+            height: 260px;
+            background: linear-gradient(135deg, #1e3a8a, #38bdf8);
             border-radius: 8px;
-            overflow: hidden;
-            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #f8fafc;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-        .novel-cover img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .novel-info {
-            flex: 1;
-            min-width: 250px;
-        }
-        h1 {
+        .novel-info h1 {
             color: #60a5fa;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-top: 0;
             margin-bottom: 1rem;
         }
-        .metadata {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .tag {
-            background-color: #334155;
-            color: #cbd5e1;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        .tag.status {
-            background-color: #0369a1;
-            color: #e0f2fe;
-        }
-        .synopsis {
+        .novel-info p {
             color: #94a3b8;
             line-height: 1.6;
+            margin-bottom: 1rem;
             font-size: 0.95rem;
-            margin: 0;
         }
         h2 {
             color: #f8fafc;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
             border-bottom: 2px solid #1e293b;
             padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
         }
         .chapter-list {
             display: flex;
@@ -105,23 +84,24 @@
         }
         .chapter-card {
             background-color: #1e293b;
-            padding: 1.25rem;
-            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            border-radius: 10px;
             text-decoration: none;
-            color: inherit;
+            color: #f8fafc;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: transform 0.2s, background-color 0.2s;
-            border-left: 4px solid #38bdf8;
+            border: 1px solid #334155;
+            transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
         }
         .chapter-card:hover {
-            background-color: #334155;
-            transform: translateX(4px);
+            transform: translateY(-2px);
+            background-color: #273548;
+            border-color: #38bdf8;
         }
         .chapter-title {
             font-weight: 600;
-            color: #f8fafc;
+            color: #e2e8f0;
             margin-bottom: 0.25rem;
         }
         .chapter-info {
@@ -129,34 +109,31 @@
             color: #94a3b8;
         }
         .chapter-badge {
-            background-color: #065f46;
-            color: #d1fae5;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
+            background-color: #0369a1;
+            color: #e0f2fe;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
             font-size: 0.75rem;
             font-weight: bold;
+        }
+        .chapter-badge.new {
+            background-color: #047857;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <a href="../index.html" class="back-home">← Volver al Inicio de Editorial Acuario</a>
+        <a href="../index.html" class="back-link">← Volver al Inicio de Editorial Acuario</a>
 
         <div class="novel-header">
             <div class="novel-cover">
-                <img src="portada 1.jpg" alt="Portada Kage no Jitsuryokusha">
+                Kage no Jitsuryokusha ni Naritakute!
             </div>
             <div class="novel-info">
                 <h1>Kage no Jitsuryokusha ni Naritakute!</h1>
-                <div class="metadata">
-                    <span class="tag">Género: Isekai, Comedia, Acción</span>
-                    <span class="tag">Autor: Daisuke Aizawa</span>
-                    <span class="tag status">Estado: En traducción</span>
-                </div>
-                <p class="synopsis">
-                    Así como los héroes y los villanos siempre han existido, alguien tiene que operar desde las sombras manipulando los hilos de la historia. Cid Kagenou aspira a convertirse en esa eminencia absoluta... Pero tras un trágico accidente en su vida anterior, reencarna en un mundo de fantasía donde la magia es real, dándole la oportunidad perfecta para llevar sus delirios al siguiente nivel sin saber que sus fantasías de mentira están a punto de volverse una aterradora realidad.
-                </p>
+                <p><strong>Género:</strong> Isekai, Comedia, Acción, Fantasía.</p>
+                <p>Mientras que todos los héroes o villanos sueñan con destacar en un mundo de fantasía, Cid Kagenou prefiere operar desde las sombras. Lo que no sabe es que sus delirios de organización secreta se han vuelto completamente reales, ¡y que sus subordinadas se toman sus bromas con una seriedad aterradora!</p>
             </div>
         </div>
 
@@ -164,24 +141,31 @@
         <div class="chapter-list">
             <a href="capitulo-1.html" class="chapter-card">
                 <div>
-                    <div class="chapter-title">Capítulo 1: ¡Permanecer dentro de los límites del ser humano significa que serás vaporizado por una súper arma!</div>
-                    <div class="chapter-info">Traducción oficial de fan | Editorial Acuario</div>
+                    <div class="chapter-title">Capítulo 1: El inicio de las sombras</div>
+                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
                 </div>
-                <span class="chapter-badge">Estreno</span>
             </a>
+
             <a href="capitulo-2.html" class="chapter-card">
-    <div>
-        <div class="chapter-title">Capítulo 2: ¡Los bandidos son básicamente una etapa de bonificación ambulante!</div>
-        <div class="chapter-info">Traducción oficial de fan | Editorial Acuario</div>
-    </div>
-    <span class="chapter-badge">Nuevo</span>
-</a>
+                <div>
+                    <div class="chapter-title">Capítulo 2: Sombras en la oscuridad</div>
+                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
+                </div>
+            </a>
+
             <a href="capitulo-3.html" class="chapter-card">
                 <div>
-                    <div class="chapter-title">Capítulo 3: ¡El inicio de una organización en las sombras!</div>
-                    <div class="chapter-info">Traducción oficial de fan | Editorial Acuario</div>
+                    <div class="chapter-title">Capítulo 3: El plan continúa</div>
+                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
                 </div>
-                <span class="chapter-badge">Nuevo</span>
+            </a>
+
+            <a href="capitulo-4.html" class="chapter-card">
+                <div>
+                    <div class="chapter-title">Capítulo 4: El inicio del plan en las sombras</div>
+                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
+                </div>
+                <span class="chapter-badge new">Nuevo</span>
             </a>
         </div>
     </div>
