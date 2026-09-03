@@ -3,93 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Acuario | Novelas Ligeras</title>
+    <title>Editorial Acuario - Sello Digital de Novelas Web</title>
     <style>
-        /* Fondo animado sutil de agua */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(125deg, #0f172a, #1e293b, #0c4a6e);
-            background-size: 250% 250%;
-            animation: gradientFlow 15s ease infinite;
+            background-color: #0f172a;
             color: #f8fafc;
             margin: 0;
-            padding: 0;
+            padding: 3rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
-            text-align: center;
-            box-sizing: border-box;
         }
-
-        /* Animación del fondo */
-        @keyframes gradientFlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         .container {
-            max-width: 600px;
-            padding: 3rem;
-            background: rgba(30, 41, 59, 0.6);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            position: relative;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
         }
-
-        /* Efecto de brillo superior simulando superficie de agua */
-        .container::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: 5%;
-            width: 90%;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, #38bdf8, transparent);
-            border-radius: 2px;
-            opacity: 0.7;
-        }
-
         h1 {
-            background: linear-gradient(90deg, #60a5fa, #38bdf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 3.5rem;
+            color: #60a5fa;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            font-weight: 800;
-            letter-spacing: -1px;
         }
-
         p {
             color: #94a3b8;
             font-size: 1.1rem;
             margin-bottom: 2.5rem;
-            line-height: 1.6;
         }
-
+        .catalog {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
         .btn {
             display: inline-block;
-            background: linear-gradient(45deg, #38bdf8, #7dd3fc);
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
             color: #0f172a;
             padding: 1rem 2rem;
-            border-radius: 50px;
+            border-radius: 12px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
             border: none;
             cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
         }
-
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
             background: linear-gradient(45deg, #7dd3fc, #38bdf8);
+        }
+        .novel-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            text-decoration: none;
+            color: #f8fafc;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+            text-align: left;
+        }
+        .novel-card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+            background-color: #273548;
+        }
+        .novel-card img {
+            width: 90px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+        .novel-card-content h3 {
+            color: #60a5fa;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        .novel-card-content p {
+            color: #94a3b8;
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -98,7 +105,20 @@
     <div class="container">
         <h1>Editorial Acuario</h1>
         <p>Tu nuevo sello digital de novelas web, isekai y de fantasía.</p>
-        <a href="mi-primera-novela/index.html" class="btn">Explorar Catálogo</a>
+        
+        <div class="catalog">
+            <!-- Primera Novela -->
+            <a href="mi-primera-novela/index.html" class="btn">Explorar Kage no Jitsuryokusha</a>
+
+            <!-- Segunda Novela -->
+            <a href="aristo-aventura/index.html" class="novel-card">
+                <img src="aristo-aventura/aristo 1.webp" alt="Tensei Kizoku no Isekai Bōken Roku">
+                <div class="novel-card-content">
+                    <h3>Tensei Kizoku no Isekai Bōken Roku</h3>
+                    <p>Las aventuras de un joven noble reencarnado con bendiciones divinas excesivas en un mundo de fantasía.</p>
+                </div>
+            </a>
+        </div>
     </div>
 
 </body>
