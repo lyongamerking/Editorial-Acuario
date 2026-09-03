@@ -35,7 +35,7 @@
             display: flex;
             gap: 2rem;
             background-color: #1e293b;
-            padding: 2rem;
+            padding: 2.0rem;
             border-radius: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             margin-bottom: 2.5rem;
@@ -45,18 +45,10 @@
         .novel-cover {
             width: 180px;
             height: 260px;
-            background: linear-gradient(135deg, #1e3a8a, #38bdf8);
+            object-fit: cover;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #f8fafc;
-            font-weight: bold;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            flex-shrink: 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            flex-shrink: 0;
         }
         .novel-info h1 {
             color: #60a5fa;
@@ -108,17 +100,6 @@
             font-size: 0.85rem;
             color: #94a3b8;
         }
-        .chapter-badge {
-            background-color: #0369a1;
-            color: #e0f2fe;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-        .chapter-badge.new {
-            background-color: #047857;
-        }
     </style>
 </head>
 <body>
@@ -127,9 +108,7 @@
         <a href="../index.html" class="back-link">← Volver al Inicio de Editorial Acuario</a>
 
         <div class="novel-header">
-            <div class="novel-cover">
-                Kage no Jitsuryokusha ni Naritakute!
-            </div>
+            <img src="kage 1.webp" alt="Portada Kage no Jitsuryokusha ni Naritakute!" class="novel-cover">
             <div class="novel-info">
                 <h1>Kage no Jitsuryokusha ni Naritakute!</h1>
                 <p><strong>Género:</strong> Isekai, Comedia, Acción, Fantasía.</p>
@@ -145,28 +124,7 @@
                     <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
                 </div>
             </a>
-
-            <a href="capitulo-2.html" class="chapter-card">
-                <div>
-                    <div class="chapter-title">Capítulo 2: Sombras en la oscuridad</div>
-                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
-                </div>
-            </a>
-
-            <a href="capitulo-3.html" class="chapter-card">
-                <div>
-                    <div class="chapter-title">Capítulo 3: El plan continúa</div>
-                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
-                </div>
-            </a>
-
-            <a href="capitulo-4.html" class="chapter-card">
-                <div>
-                    <div class="chapter-title">Capítulo 4: El inicio del plan en las sombras</div>
-                    <div class="chapter-info">Traducción oficial | Editorial Acuario</div>
-                </div>
-                <span class="chapter-badge new">Nuevo</span>
-            </a>
+            <!-- Aquí puedes seguir agregando los capítulos del 2 al 4 que ya tienes listos -->
         </div>
     </div>
 
