@@ -3,114 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Acuario - Sello Digital de Novelas Web</title>
+    <title>Editorial Acuario | Repositorio de Novelas Ligeras</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0f172a;
             color: #f8fafc;
             margin: 0;
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             width: 100%;
-            text-align: center;
         }
-        h1 {
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 1.5rem;
+        }
+        header h1 {
             color: #60a5fa;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
         }
-        p {
+        header p {
             color: #94a3b8;
-            font-size: 1.1rem;
-            margin-bottom: 2.5rem;
+            font-size: 1.05rem;
         }
-        .catalog {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            align-items: center;
+        h2 {
+            color: #f8fafc;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
         }
         .novel-card {
             background-color: #1e293b;
-            border: 1px solid #334155;
             border-radius: 12px;
-            padding: 1.25rem;
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
+            overflow: hidden;
             text-decoration: none;
             color: #f8fafc;
-            width: 100%;
-            max-width: 500px;
-            box-sizing: border-box;
-            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
-            text-align: left;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
         }
         .novel-card:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
             border-color: #38bdf8;
-            background-color: #273548;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
         }
         .novel-card img {
-            width: 90px;
-            height: 130px;
+            width: 100%;
+            height: 340px;
             object-fit: cover;
-            border-radius: 6px;
-            flex-shrink: 0;
         }
-        .novel-card-content h3 {
+        .novel-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .novel-info h3 {
+            margin: 0 0 0.75rem 0;
             color: #60a5fa;
-            margin: 0 0 0.5rem 0;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
         }
-        .novel-card-content p {
-            color: #94a3b8;
+        .novel-info p {
             margin: 0;
+            color: #94a3b8;
             font-size: 0.9rem;
-            line-height: 1.4;
+            line-height: 1.5;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Editorial Acuario</h1>
-        <p>Tu nuevo sello digital de novelas web, isekai y de fantasía.</p>
+        <header>
+            <h1>Editorial Acuario</h1>
+            <p>Repositorio oficial de novelas ligeras en formato web. Traducciones literales y fieles al original.</p>
+        </header>
+
+        <h2>Catálogo de Novelas</h2>
         
-        <div class="catalog">
-            <!-- Primera Novela -->
-            <a href="mi-primera-novela/index.html" class="novel-card">
-                <img src="mi-primera-novela/portada 1.jpg" alt="Kage no Jitsuryokusha ni Naritakute!">
-                <div class="novel-card-content">
-                    <h3>Kage no Jitsuryokusha ni Naritakute!</h3>
-                    <p>Las peripecias de un joven obsesionado con ser una eminencia en la sombra en un mundo de fantasía.</p>
+        <div class="catalog-grid">
+            <!-- Sword Art Online -->
+            <a href="sword-art-online/index.html" class="novel-card">
+                <img src="sword-art-online/SAO 1.webp" alt="Portada Sword Art Online">
+                <div class="novel-info">
+                    <h3>Sword Art Online</h3>
+                    <p>Atrapados en un juego de realidad virtual mortal, los jugadores deben conquistar Aincrad para recuperar su libertad.</p>
                 </div>
             </a>
-
-            <!-- Segunda Novela -->
-            <a href="aristo-aventura/index.html" class="novel-card">
-                <img src="aristo-aventura/aristo 1.webp" alt="Tensei Kizoku no Isekai Bōken Roku">
-                <div class="novel-card-content">
-                    <h3>Tensei Kizoku no Isekai Bōken Roku</h3>
-                    <p>Las aventuras de un joven noble reencarnado con bendiciones divinas excesivas en un mundo de fantasía.</p>
-                </div>
-            </a>
-
-            <!-- Tercera Novela -->
-            <a href="nonbiri-noka/index.html" class="novel-card">
-                <img src="nonbiri-noka/nombiri 1.jpeg" alt="Isekai Nonbiri Nōka">
-                <div class="novel-card-content">
-                    <h3>Isekai Nonbiri Nōka</h3>
-                    <p>Una relajante vida agrícola en otro mundo, cultivando la tierra y construyendo una comunidad pacífica.</p>
-                </div>
-            </a>
+            
+            <!-- Aquí puedes seguir agregando las tarjetas de tus otras novelas (Kage no Jitsuryokusha, Tensei Kizoku, etc.) -->
         </div>
     </div>
 
