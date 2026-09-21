@@ -1,20 +1,18 @@
 # Editorial Acuario
 
-Biblioteca digital de obras de dominio público, proyectos originales y traducciones publicadas con autorización.
+Biblioteca digital de obras de dominio público, reseñas y fichas críticas.
 
 ## Política del proyecto
 
-- No se publican novelas completas, traducciones ni portadas protegidas sin permiso.
-- Las obras de dominio público deben verificarse según el país desde el que se publica y la jurisdicción aplicable.
-- Cada entrada debe conservar la autoría, la fuente y las condiciones de uso.
-- Las obras contemporáneas solo se incorporan con autorización escrita del titular de derechos.
+- No se publican traducciones, capítulos ni portadas de obras protegidas sin permiso.
+- Cualquier obra de dominio público debe verificarse según la jurisdicción aplicable y la fuente de la edición.
+- Las traducciones modernas solo se incorporan si cuentan con autorización escrita del titular de derechos o si se trata de una obra libre.
+- Cada entrada incluye autor, fuente, año y condiciones de uso.
 
 ## Catálogo
 
-Consulta [`catalogo/dominio-publico.md`](catalogo/dominio-publico.md) para ver las obras iniciales y sus fuentes de lectura.
+Consulta el archivo [catalogo/dominio-publico.md](catalogo/dominio-publico.md) para ver las obras iniciales y sus referencias legales.
 
-## Próximos pasos
+## Objetivo
 
-1. Añadir fichas y reseñas originales.
-2. Incorporar textos de dominio público después de revisar la licencia de la fuente.
-3. Recibir novelas originales o traducciones autorizadas de autores colaboradores.
+Crear una biblioteca sólida, responsable y profesional, con literatura clásica de dominio público, textos autorizados y contenido original.
