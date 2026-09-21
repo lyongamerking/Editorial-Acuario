@@ -1,18 +1,30 @@
 # Editorial Acuario
 
-Biblioteca digital de obras de dominio público, reseñas y fichas críticas.
+Biblioteca digital de literatura clásica, obras de dominio público y proyectos con autorización.
 
-## Política del proyecto
+## Política editorial
 
-- No se publican traducciones, capítulos ni portadas de obras protegidas sin permiso.
-- Cualquier obra de dominio público debe verificarse según la jurisdicción aplicable y la fuente de la edición.
-- Las traducciones modernas solo se incorporan si cuentan con autorización escrita del titular de derechos o si se trata de una obra libre.
-- Cada entrada incluye autor, fuente, año y condiciones de uso.
+- No publicamos traducciones, capítulos ni portadas de obras protegidas sin permiso escrito.
+- Antes de añadir una obra, revisamos que el texto original esté en dominio público en la jurisdicción aplicable.
+- Si una traducción moderna o edición anotada tiene derechos, no la reutilizamos.
+- Cada ficha incluye autor, año, fuente y referencia legal.
+- Las portadas y materiales adicionales se diseñan de forma original o con licencia compatible.
 
-## Catálogo
+## Catálogo actual
 
-Consulta el archivo [catalogo/dominio-publico.md](catalogo/dominio-publico.md) para ver las obras iniciales y sus referencias legales.
+Nuestra biblioteca inicial está enfocada en obras de dominio público y en proyectos originados por Editorial Acuario.
 
-## Objetivo
+- Frankenstein — Mary Shelley
+- Drácula — Bram Stoker
+- Alicia en el país de las maravillas — Lewis Carroll
+- Las aventuras de Sherlock Holmes — Arthur Conan Doyle
+- La máquina del tiempo — H. G. Wells
 
-Crear una biblioteca sólida, responsable y profesional, con literatura clásica de dominio público, textos autorizados y contenido original.
+## Enlace principal
+
+- Página de inicio: [index.html](index.html)
+- Obras de dominio público: [catalogo/dominio-publico.md](catalogo/dominio-publico.md)
+
+## Aviso legal
+
+Una obra puede ser pública en el país del autor y aun así requerir revisión si se publica en otra jurisdicción o si se usa una edición moderna protegida. Este sitio se mantiene con la intención de publicar solo textos libres, originales o autorizados.
