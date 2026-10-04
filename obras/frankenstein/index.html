@@ -3,58 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frankenstein de Mary Shelley, edición en español de Editorial Acuario." />
+  <meta name="description" content="Frankenstein — Editorial Acuario. Edición digital en español." />
   <title>Frankenstein | Editorial Acuario</title>
   <style>
-    :root{--bg:#07111f;--panel:#101e31;--line:#2a3e5d;--text:#edf5ff;--muted:#bfd2ec;--cyan:#8ae3ff;--gold:#f8d98b}
+    :root{--bg:#07111f;--panel:#101e31;--line:#2a3e5d;--text:#edf5ff;--muted:#bfd2ec;--cyan:#8ae3ff;--gold:#f8d98b;--shadow:#00000055}
     *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 80% 0,#183659 0,#07111f 42%);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
-    a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}.wrap{width:min(980px,calc(100% - 2rem));margin:auto}
-    header{border-bottom:1px solid #ffffff18;background:#07111fcc;backdrop-filter:blur(10px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{font-weight:700;font-size:1.1rem}
-    main{padding:3.5rem 0 5rem}.eyebrow{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}h1{margin:.35rem 0 .5rem;font-size:clamp(2.5rem,7vw,4.8rem);font-weight:700}h2{margin:2rem 0 1rem;font-size:1.6rem}
-    .hero,.card,.summary{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(18,32,50,.97),rgba(11,23,36,.97));box-shadow:0 18px 40px #0004}.hero{padding:clamp(1.5rem,5vw,3rem)}
-    .meta{color:var(--muted);font-size:.95rem}.lead{font-size:1.1rem;color:var(--text);margin:1rem 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:1.5rem 0}.card{padding:1.5rem;border-radius:16px}
-    .tag{display:inline-block;background:rgba(138,227,255,.1);color:var(--cyan);padding:.25rem .75rem;border-radius:6px;font-size:.75rem;font-weight:700;margin-bottom:.5rem;text-transform:uppercase}
-    .card h3{margin:.5rem 0}
-    .summary{padding:2rem}
+    a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{width:min(980px,calc(100% - 2rem));margin:auto}
+    header{border-bottom:1px solid #ffffff18;background:#07111fcc;backdrop-filter:blur(10px)}
+    .nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{font-weight:700;font-size:1.15rem}
+    main{padding:3.5rem 0 5rem}
+    .eyebrow{color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    h1{margin:.4rem 0 .6rem;font-size:clamp(2.7rem,7vw,4.4rem);line-height:1.05;font-weight:800}
+    .lead{font-size:1.1rem;color:var(--muted);max-width:62ch}
+    .hero{padding:clamp(1.5rem,4vw,3rem);border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(18,32,50,.97),rgba(11,23,36,.97));box-shadow:0 18px 40px var(--shadow)}
+    .meta{color:var(--muted);margin:0 0 1rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem;margin-top:2rem}
+    .card{padding:1.4rem 1.3rem;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(16,30,49,.95),rgba(11,23,35,.95));box-shadow:0 12px 32px var(--shadow)}
+    .tag{display:inline-block;padding:.35rem .7rem;border-radius:999px;border:1px solid rgba(138,227,255,.3);background:rgba(138,227,255,.06);color:var(--cyan);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .card h3{margin:.9rem 0 .55rem;font-size:1.25rem}
+    .card p{margin:0;color:var(--muted)}
+    .button{display:inline-block;margin-top:1rem;padding:.8rem 1.1rem;border-radius:10px;border:1px solid var(--line);background:rgba(138,227,255,.08);color:var(--cyan);font-weight:600}
+    .button:hover{text-decoration:none;background:rgba(138,227,255,.12)}
+    .summary{margin-top:2rem;padding:2rem;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(18,32,50,.97),rgba(11,23,36,.97));box-shadow:0 18px 40px var(--shadow)}
+    .summary ul{margin:1rem 0 0 1.3rem;color:var(--muted)}
+    .small{color:var(--muted);margin-top:1rem}
     footer{border-top:1px solid #ffffff18;padding:2rem 0;text-align:center;font-size:.85rem;color:var(--muted)}
-    .button{display:inline-block;background:rgba(138,227,255,.1);border:1px solid var(--cyan);color:var(--cyan);padding:.75rem 1.5rem;border-radius:8px;text-decoration:none;transition:all .3s}
-    .button:hover{background:rgba(138,227,255,.2)}
-    @media(max-width:600px){.nav{align-items:flex-start;padding:1rem 0;flex-direction:column}main{padding-top:2.5rem}.grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.nav{align-items:flex-start;padding:1rem 0;flex-direction:column}}
   </style>
 </head>
 <body>
-  <header><div class="wrap nav"><a class="brand" href="../../index.html"><i></i>Editorial Acuario</a><a href="../../catalogo/dominio-publico.md">Catálogo y fuentes</a></div></header>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="../../index.html">Editorial Acuario</a>
+      <a href="../../catalogo/dominio-publico.md">Catálogo y fuentes</a>
+    </div>
+  </header>
+
   <main class="wrap">
     <section class="hero">
-      <div class="eyebrow">Dominio público · Edición en preparación</div>
+      <div class="eyebrow">Dominio público · edición original en español</div>
       <h1>Frankenstein</h1>
       <p class="meta">Mary Shelley · Primera edición de referencia: 1818</p>
-      <p class="lead">Una nueva edición en español preparada directamente a partir del texto original, con traducción propia, revisión editorial y materiales diseñados por Editorial Acuario.</p>
+      <p class="lead">Una edición digital pensada para lectores actuales: lectura limpia, estilo literario propio y una presentación moderna, inspirada en la atmósfera del terror romántico.</p>
+
       <div class="grid">
         <article class="card">
-          <div class="tag">Disponible</div>
-          <h2>Capítulo 1</h2>
-          <p>Cartas de Robert Walton: El viajero polar y sus confesar junto a Victor. Introducción a la ambición que impulsa la tragedia.</p>
-          <a href="capitulo-1.html" class="button">Leer Capítulo 1</a>
+          <div class="tag">Capítulo 1</div>
+          <h3>Robert Walton y el origen</h3>
+          <p>La ambición del explorador y la primera mirada al mundo íntimo de Victor Frankenstein.</p>
+          <a class="button" href="capitulo-1.html">Leer capítulo 1</a>
         </article>
+
         <article class="card">
-          <div class="tag">Próximamente</div>
-          <h2>Capítulos siguientes</h2>
-          <p>Se publicarán por entregas después de completar la revisión de cada capítulo y comprobar la coherencia de la traducción.</p>
+          <div class="tag">Capítulo 2</div>
+          <h3>La infancia y la obsesión</h3>
+          <p>La historia de la familia Frankenstein, la llegada de Elizabeth y el inicio de la búsqueda científica.</p>
+          <a class="button" href="capitulo-2.html">Leer capítulo 2</a>
+        </article>
+
+        <article class="card">
+          <div class="tag">Capítulo 3</div>
+          <h3>La universidad y la creación</h3>
+          <p>El momento decisivo en que Victor se entrega a un experimento que cambiará su destino.</p>
+          <a class="button" href="capitulo-3.html">Leer capítulo 3</a>
         </article>
       </div>
     </section>
+
     <section class="summary">
       <h2>Nota editorial</h2>
-      <p>La obra original pertenece al dominio público. Esta edición no reproduce traducciones modernas protegidas: el texto en español será una traducción nueva y propia de Editorial Acuario, enfocada en mantener la voz narrativa original con un español contemporáneo pero literario.</p>
+      <p>Esta edición no reutiliza traducciones modernas protegidas. La versión en español es una traducción nueva y propia de Editorial Acuario, pensada para conservar la fuerza narrativa original sin caer en lenguaje pesado o artificial.</p>
       <ul>
         <li>Fuente original documentada.</li>
-        <li>Traducción y corrección por entregas.</li>
-        <li>Portada y materiales propios o compatibles con licencia.</li>
+        <li>Traducción propia por entregas.</li>
+        <li>Estética moderna con lectura en pantalla.</li>
       </ul>
-      <p class="small">Estado actual: capítulo 1 completo y publicado; trabajo en curso para capítulos posteriores.</p>
+      <p class="small">Estado actual: capítulos 1, 2 y 3 publicados; la edición continúa con nuevas entregas.</p>
     </section>
   </main>
-  <footer><div class="wrap">Editorial Acuario · Biblioteca digital responsable · <a href="../../README.md">Política editorial</a></div></footer>
+
+  <footer>
+    <div class="wrap">Editorial Acuario · Biblioteca digital responsable · <a href="../../README.md">Política editorial</a></div>
+  </footer>
 </body>
 </html>
